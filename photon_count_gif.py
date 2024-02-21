@@ -40,4 +40,3 @@ max_terms = photon_number
 
 ani = FuncAnimation(fig, update, frames=max_terms + 1, init_func=init, repeat=False, blit=True)
 ani.save('photon_dis.gif', writer='ffmpeg', fps=15)
-plt.show()
