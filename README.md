@@ -1,1 +1,1 @@
-# photon_distribution_gif
+# run完後會存下一個由一顆光子開始落點到N顆落點完畢的gif
