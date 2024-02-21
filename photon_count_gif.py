@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-photon_number = 100
-size = 17
+photon_number = 500
+size = 13
 x = np.arange(-(size + 1) / 2, (size + 1) / 2 + 0.01, 0.01)
 tick = int((((size + 1) / 2)-(-(size - 1) / 2))//0.5)
 print(tick)
@@ -37,6 +37,5 @@ def update(n_terms):
     return lines,
 
 max_terms = photon_number
-
 ani = FuncAnimation(fig, update, frames=max_terms + 1, init_func=init, repeat=False, blit=True)
 ani.save('photon_dis.gif', writer='ffmpeg', fps=15)
